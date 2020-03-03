@@ -1,4 +1,4 @@
-package com.fastcampus.rollschedule;
+package com.JHOS.rollschedule;
 
 import org.junit.Test;
 

@@ -1,4 +1,4 @@
-package com.fastcampus.rollschedule;
+package com.JHOS.rollschedule;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;

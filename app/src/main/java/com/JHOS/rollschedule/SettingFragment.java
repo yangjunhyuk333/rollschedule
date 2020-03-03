@@ -1,4 +1,4 @@
-package com.fastcampus.rollschedule;
+package com.JHOS.rollschedule;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -9,11 +9,13 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 
-public class TodayFragment extends Fragment {
+import com.JHOS.rollschedule.R;
+
+public class SettingFragment extends Fragment {
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        View view = inflater.inflate(R.layout.today_fragment, container, false);
+        View view = inflater.inflate(R.layout.setting_fragment, container, false);
         return view;
     }
 }

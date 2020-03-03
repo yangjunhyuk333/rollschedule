@@ -1,4 +1,4 @@
-package com.fastcampus.rollschedule;
+package com.JHOS.rollschedule;
 
 import android.content.Context;
 
@@ -22,6 +22,6 @@ public class ExampleInstrumentedTest {
         // Context of the app under test.
         Context appContext = InstrumentationRegistry.getInstrumentation().getTargetContext();
 
-        assertEquals("com.fastcampus.rollschedule", appContext.getPackageName());
+        assertEquals("com.JHOS.rollschedule", appContext.getPackageName());
     }
 }
