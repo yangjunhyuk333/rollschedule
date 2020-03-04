@@ -6,15 +6,24 @@ import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentStatePagerAdapter;
 
+import com.google.android.material.tabs.TabLayout;
+
+import org.w3c.dom.Text;
+
 import java.util.ArrayList;
 
 public class PagerAdapter extends FragmentStatePagerAdapter {
+
+    private ArrayList<String> text = new ArrayList<String>();
 
     private ArrayList<Fragment> items = new ArrayList<>();
 
     public PagerAdapter(@NonNull FragmentManager fm, int behavior) {
         super(fm, behavior);
 
+        text.add("하루 일정");
+        text.add("한달 일정");
+        text.add("설정");
     }
 
     public void addItem(Fragment item){
@@ -30,5 +39,11 @@ public class PagerAdapter extends FragmentStatePagerAdapter {
     @Override
     public int getCount() {
         return items.size();
+    }
+
+    @Nullable
+    @Override
+    public CharSequence getPageTitle(int position) {
+        return text.get(position);
     }
 }

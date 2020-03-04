@@ -5,13 +5,15 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".RollScheduleMakeActivity"
-    android:orientation="vertical">
+    >
 
-    <androidx.viewpager.widget.ViewPager
-        android:id="@+id/viewPager2"
+    <LinearLayout
+        android:id="@+id/container"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"/>
+        android:layout_height="match_parent"
+        android:orientation="vertical">
 
+    </LinearLayout>
 
 
 </LinearLayout>
