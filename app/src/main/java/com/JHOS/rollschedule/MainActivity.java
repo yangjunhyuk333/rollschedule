@@ -1,13 +1,14 @@
 package com.JHOS.rollschedule;
 
+import android.os.Bundle;
+
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.FragmentStatePagerAdapter;
 import androidx.viewpager.widget.ViewPager;
 
-import android.os.Bundle;
-
-import com.JHOS.rollschedule.R;
 import com.google.android.material.tabs.TabLayout;
+
+import java.util.ArrayList;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -17,6 +18,7 @@ public class MainActivity extends AppCompatActivity {
     MonthFragment monthFragment;
     SettingFragment settingFragment;
     PagerAdapter pagerAdapter;
+    TabLayout.Tab tab;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -43,8 +45,15 @@ public class MainActivity extends AppCompatActivity {
 
         tabLayout.setupWithViewPager(viewPager);
 
+        ArrayList<Integer> images = new ArrayList<Integer>();
+
+        images.add(R.drawable.todayxxxhdpi);
+        images.add(R.drawable.monthxxxhdpi);
+        images.add(R.drawable.settingxxxhdpi);
+
         for(int i = 0; i < 3; i++){
-            tabLayout.getTabAt(i);
+            tab = tabLayout.getTabAt(i).setIcon(images.get(i));
+
         }
     }
 }

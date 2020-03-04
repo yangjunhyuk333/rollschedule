@@ -6,10 +6,6 @@ import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentStatePagerAdapter;
 
-import com.google.android.material.tabs.TabLayout;
-
-import org.w3c.dom.Text;
-
 import java.util.ArrayList;
 
 public class PagerAdapter extends FragmentStatePagerAdapter {
@@ -24,6 +20,7 @@ public class PagerAdapter extends FragmentStatePagerAdapter {
         text.add("하루 일정");
         text.add("한달 일정");
         text.add("설정");
+
     }
 
     public void addItem(Fragment item){
