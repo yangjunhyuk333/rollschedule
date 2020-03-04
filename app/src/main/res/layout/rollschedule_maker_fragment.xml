@@ -8,8 +8,8 @@
         android:layout_height="wrap_content"
         android:text="원형 시간표 만드는 프레그먼트"
         android:textSize="32dp"
+        android:layout_gravity="center"
         android:textColor="#000000"
-
         />
 
 </LinearLayout>

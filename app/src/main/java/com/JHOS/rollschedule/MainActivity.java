@@ -1,16 +1,23 @@
 package com.JHOS.rollschedule;
 
-import android.os.Bundle;
-
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentActivity;
 import androidx.fragment.app.FragmentStatePagerAdapter;
 import androidx.viewpager.widget.ViewPager;
 
+import android.os.Bundle;
+
+import com.JHOS.rollschedule.MonthFragment;
+import com.JHOS.rollschedule.PagerAdapter;
+import com.JHOS.rollschedule.R;
+import com.JHOS.rollschedule.SettingFragment;
+import com.google.android.material.tabs.TabItem;
 import com.google.android.material.tabs.TabLayout;
 
 import java.util.ArrayList;
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends FragmentActivity {
 
     ViewPager viewPager;
     TabLayout tabLayout;
@@ -24,6 +31,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
 
         tabLayout = findViewById(R.id.bottomTabLayout);
         viewPager = findViewById(R.id.viewPager);
@@ -41,19 +49,19 @@ public class MainActivity extends AppCompatActivity {
         pagerAdapter.addItem(monthFragment);
         pagerAdapter.addItem(settingFragment);
 
-        viewPager.setAdapter(pagerAdapter);
-
-        tabLayout.setupWithViewPager(viewPager);
-
         ArrayList<Integer> images = new ArrayList<Integer>();
 
         images.add(R.drawable.todayxxxhdpi);
         images.add(R.drawable.monthxxxhdpi);
         images.add(R.drawable.settingxxxhdpi);
 
-        for(int i = 0; i < 3; i++){
-            tab = tabLayout.getTabAt(i).setIcon(images.get(i));
+        viewPager.setAdapter(pagerAdapter);
 
+        tabLayout.setupWithViewPager(viewPager);
+
+        for(int i = 0; i < 3; i++){
+            tabLayout.getTabAt(i);
+            tab = tabLayout.getTabAt(i).setIcon(images.get(i));
         }
     }
 }
