@@ -11,6 +11,8 @@ import androidx.fragment.app.Fragment;
 
 import com.JHOS.rollschedule.R;
 
+//한달 계획을 만드는 곳
+
 public class MonthFragment extends Fragment {
     @Nullable
     @Override

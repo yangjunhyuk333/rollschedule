@@ -10,16 +10,10 @@ import java.util.ArrayList;
 
 public class PagerAdapter extends FragmentStatePagerAdapter {
 
-    private ArrayList<String> text = new ArrayList<String>();
-
     private ArrayList<Fragment> items = new ArrayList<>();
 
     public PagerAdapter(@NonNull FragmentManager fm, int behavior) {
         super(fm, behavior);
-
-        text.add("하루 일정");
-        text.add("한달 일정");
-        text.add("설정");
 
     }
 
@@ -36,11 +30,5 @@ public class PagerAdapter extends FragmentStatePagerAdapter {
     @Override
     public int getCount() {
         return items.size();
-    }
-
-    @Nullable
-    @Override
-    public CharSequence getPageTitle(int position) {
-        return text.get(position);
     }
 }

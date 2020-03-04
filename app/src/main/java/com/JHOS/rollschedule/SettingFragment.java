@@ -11,6 +11,8 @@ import androidx.fragment.app.Fragment;
 
 import com.JHOS.rollschedule.R;
 
+//설정을 하는 곳
+
 public class SettingFragment extends Fragment {
     @Nullable
     @Override
