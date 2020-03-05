@@ -15,6 +15,8 @@ import androidx.fragment.app.Fragment;
 
 import com.JHOS.rollschedule.R;
 
+//하루 일정을 출력하는 프레그먼트
+
 public class TodayFragment extends Fragment {
 
     ImageButton imageButton;

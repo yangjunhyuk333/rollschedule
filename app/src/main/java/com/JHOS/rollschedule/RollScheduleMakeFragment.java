@@ -10,6 +10,8 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 
+//원형 시간표를 만드는 프레그먼트
+
 public class RollScheduleMakeFragment extends Fragment {
     @Nullable
     @Override

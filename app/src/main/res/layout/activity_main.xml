@@ -7,11 +7,15 @@
     android:orientation="vertical"
     tools:context="com.JHOS.rollschedule.MainActivity">
 
+    //메인 엑티비티
+
+    //tab layout
     <com.google.android.material.tabs.TabLayout
         android:id="@+id/bottomTabLayout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"/>
 
+    //view pager
     <androidx.viewpager.widget.ViewPager
         android:id="@+id/viewPager"
         android:layout_width="match_parent"
