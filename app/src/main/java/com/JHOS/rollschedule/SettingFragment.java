@@ -13,7 +13,7 @@ import com.JHOS.rollschedule.R;
 
 //설정을 할 수 있게 해주는 프레그먼트
 
-//설정: 테마(올해의 색) 사용/사용 안함, 알림 설정(알림 음악, 효과음, 진동, 무음), 다크 모드 사용/사용안함
+//설정: 테마(올해의 색) 사용/사용 안함(사용 안함 선택시 흰색으로 바뀜, 알림 설정(알림 음악, 효과음, 진동, 무음), 다크 모드 사용/사용안함
 
 public class SettingFragment extends Fragment {
     @Nullable

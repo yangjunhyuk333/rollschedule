@@ -6,22 +6,20 @@
 
     //하루 계획을 출력하는 프레그먼트
 
-    <TextView
+    <FrameLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:text="오늘의 하루 프레그먼트"
-        android:textColor="#000000"
-        android:textSize="30dp" />
+        android:layout_gravity="bottom"
+        android:orientation="vertical">
 
-    <ImageButton
-        android:id="@+id/imageButton"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
-        android:src="@drawable/todayxxxhdpi"
-        android:layout_gravity="center"
-        android:layout_marginTop="250dp"
-        android:background="@android:color/transparent"
-        />
+        <ImageView
+            android:id="@+id/imageButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:scaleType="centerInside"
+            android:src="@drawable/rollscheduletoday" />
+
+    </FrameLayout>
 
 </LinearLayout>

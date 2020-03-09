@@ -16,16 +16,10 @@ import java.util.ArrayList;
 
 public class PagerAdapter extends FragmentStatePagerAdapter {
 
-    private ArrayList<String> text = new ArrayList<String>(); //tab 안에 들어갈 텍스트를 저장하는 리스트
-
     private ArrayList<Fragment> items = new ArrayList<>(); //tab 의 view pager 에 들어갈 프레그먼트를 저장하는 리스트
 
     public PagerAdapter(@NonNull FragmentManager fm, int behavior) {
         super(fm, behavior);
-
-        text.add("하루 일정");//하루 일정 text 추가
-        text.add("한달 일정");//한달 일정 text 추가
-        text.add("설정");//설정 text 추가
     }
 
     public void addItem(Fragment item){
@@ -41,11 +35,5 @@ public class PagerAdapter extends FragmentStatePagerAdapter {
     @Override
     public int getCount() {
         return items.size();//tab 의 갯수를 item 의 크기 만큼  반환
-    }
-
-    @Nullable
-    @Override
-    public CharSequence getPageTitle(int position) {
-        return text.get(position);//tab 에 맞는 텍스트를 반환
     }
 }
